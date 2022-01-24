@@ -1,0 +1,78 @@
+<!-- bouton qui appel la fonction "Button" -->
+<input type= "button"id= "Timer" onclick= "button()" value= "Retourner a quick'N'easy "> 
+
+<input type= "button" onclick= "rating()" value= "Laisser une revue! "> 
+
+<!-- style de la page web -->
+<style>
+  link{
+    display: true;
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+
+  }
+  a{
+    color: yellow;
+  }
+</style>
+<body>
+
+  <h1>
+    
+
+  </h1>
+<br>
+<p></p>
+    <!-- les liens de recette commence ici -->
+    <a href="https://www.tasteatlas.com/carbonara" target="_blank" >Carbonara (Italy)</a>
+  <br>
+    <a href="https://www.tasteatlas.com/griot" target="_blank" > griot (Haiti) </a>
+  <br>
+    <a href="https://www.tasteatlas.com/tassot" target="_blank" > Tassot (Haiti) </a>
+  <br>
+    <a href="https://www.tasteatlas.com/lasagne-bolognese" target="_blank" > Lasagne-Bolognese (Italy) </a>
+  <br>
+  <a href="https://www.tasteatlas.com/jarret-de-boeuf" target="_blank" > Jarret de Boeuf (Chad) </a>
+  <br>
+    <a href="https://www.tasteatlas.com/beef-noodle-soup" target="_blank" > Soup au nouille et Boeuf(Taiwan) </a>
+  <br>
+    <a href="https://www.tasteatlas.com/fried-chicken" target="_blank" > Poulet Fris (Etat-Unis) </a>
+  <br>
+  <a href="https://www.tasteatlas.com/gratin" target="_blank" > Gratin (Italy) </a>
+  <br>
+  <br>
+  <br>
+  <!-- les liens de recettes termine ici -->
+
+</body>
+
+<script>
+ 
+ //Fonction qui retourne l'utilisateur a la page principale
+ function button (){
+
+location.replace("index.html")
+
+   
+ }
+
+function rating (){
+
+   var choix = confirm("Est-ce que vous êtes satisfait avec votre notre site Quick'N'easy? ")
+
+   if (choix == true) {
+     alert("Merci pour votre revue!")
+   }
+    else if (choix == false){
+      alert ("On s'excuse de votre insatisfaction, laisser un mots a www.########.com pour des modification a notre service.")
+    }
+ }
+  
+</script>
