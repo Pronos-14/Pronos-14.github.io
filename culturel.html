@@ -1,0 +1,121 @@
+<!-- Style de la page web -->
+<style>
+  link{
+    display: true;
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+
+  }
+  a{
+    color: yellow;
+  }
+</style>
+<body>
+  
+<p >Sticky Ribs est un mets haitien qui est basé sur les travers de porcs mariné dans un sauce qui apporte  </p>
+
+<!-- Tous les liens de ce point ci, sont des liens pour les recettes desirer -->
+<a  href="https://www.taste.com.au/recipes/sticky-ribs-dirty-rice/3656b80b-ce67-4400-b4f2-ff11321517bf?r=quickeasy/QogHhm7b" target="_blank">Sticky ribs</a>
+<br>
+<p>
+  Lihapullat est une recettes de boule de viande
+</p>
+<a href="https://www.tasteatlas.com/lihapullat" target="_blank"> Lihapullat </a>
+<br>
+<p>Lokiheito est une soupe de saumon </p>
+<a href="https://www.tasteatlas.com/lohikeitto" target="_blank">Lokiheito</a>
+<br>
+<p>
+  Phall est un ragout anglais basé sur la viande rouge
+</p>
+<a href="https://www.tasteatlas.com/phall" target="_blank"> Phall</a>
+<br>
+<p>
+  Biryani un plat de poulet avec du riz  
+</p>
+<a href="https://www.tasteatlas.com/biryani-northern-india" target="_blank">Biryani</a>
+<br>
+<p>
+  Butter chicken est plat qui surtout basé le poulé et la sauce qui apporte les différentes saveurs du poulet
+</p>
+<a href="https://www.tasteatlas.com/butter-chicken" target="_blank">Butter chicken</a>
+<br>
+<P> Griot est du porc qui bien frit et surtout un plats qui demande qu'on laisse mariner</P>
+<a href="https://www.tasteatlas.com/griot" target="_blank">Griot</a>
+<br>
+<p>
+  
+</p>
+<a href="https://www.tasteatlas.com/poulet-aux-noix" target="_blank">Poulet aux noix</a>
+<br>
+<a href="https://www.tasteatlas.com/haitian-patty" target="_blank"></a>
+<br>
+<br>
+<a href="" target="_blank">Pâtée cordé Haitien</a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/tassot" target="_blank">Viande traditionelle Tassot (Italy) </a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/frittata" target="_blank">Frittata(Italy)</a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/surf-and-turf" target="_blank"> Surf and Turf (Etat-Unis) </a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/tendon" target="_blank"> Tendon(Japon) </a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/quiche" target="_blank"> Quiche(France) </a>
+<br>
+<br>
+<a href="https://www.tasteatlas.com/pot-roast" target="_blank" > Pot-Roast(Etat-Unis) </a>
+  <br>
+  <br>
+    <a href="https://www.tasteatlas.com/blt-sandwich" target="_blank" > BLT (Etat-Unis) </a>
+    <!-- Les liens termine ici -->
+    
+ <br>
+  <br>
+
+<!-- bouton qui appel la fonction "button" -->
+<input type= "button"id= "Timer" onclick= "button()" value= "Retourner a Quick'N'easy "> 
+
+<input type= "button" onclick= "rating()" value= "Laisser une revue! "> 
+
+<script>
+ 
+
+ 
+ //La fonction pour retourner a la page principale
+ function button (){
+
+location.replace("index.html")
+
+   
+ }
+
+ function rating (){
+
+   var choix = confirm("Est-ce que vous êtes satisfait avec votre notre site Quick'N'easy? ")
+
+   if (choix == true) {
+     alert("Merci pour votre revue!")
+   }
+    else if (choix == false){
+      alert ("On s'excuse de votre insatisfaction, laisser un mots a www.########.com pour des modification a notre service.")
+    }
+ }
+  
+</script>
+
+<br>
+<p></p>
+</body>
