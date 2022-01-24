@@ -1,0 +1,76 @@
+<!-- bouton pour retourner a la page principale -->
+<input type= "button"id= "Timer" onclick= "button()" value= "Retourner a quick'N'easy "> 
+
+<input type= "button" onclick= "rating()" value= "Laisser une revue! "> 
+
+<!-- Style de la page web -->
+<style>
+  link{
+    display: true;
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+
+  }
+  a{
+    color: yellow;
+  }
+</style>
+<body>
+
+  <h1>
+    <p></p>
+    
+    <!-- Lien de recette commence ici -->
+  <a href="https://www.tasteatlas.com/medisterkaker" target="_blank" > Medisterkaker (Norway) </a>
+  <br>
+  <br>
+  <a href="https://www.tasteatlas.com/sisig" target="_blank" > Sisig(Philippines) </a>
+  <br>
+  <br>
+    <a href="https://www.tasteatlas.com/bruschetta" target="_blank" > Bruschetta (Italy) </a>
+  <br>
+  <br>
+  <a href="https://www.tasteatlas.com/takoyaki" target="_blank" > Takoyaki (Japon) </a>
+  <br>
+  <br>
+  <a href="https://www.tasteatlas.com/adobo" target="_blank">Adobo (Philippines)</a>
+<br>
+<br>
+<!-- lien de recettes termine ici -->
+  
+  
+  </h1>
+
+</body>
+<script>
+ 
+ //Fonction appelé quand le bouton est pesé 
+ function button (){
+
+location.replace("index.html")
+
+   
+ }
+
+ function rating (){
+
+   var choix = confirm("Est-ce que vous êtes satisfait avec votre notre site Quick'N'easy? ")
+
+   if (choix == true) {
+     alert("Merci pour votre revue!")
+   }
+    else if (choix == false){
+      alert ("On s'excuse de votre insatisfaction, laisser un mots a www.########.com pour des modification a notre service.")
+    }
+ }
+
+ 
+  
+</script>
