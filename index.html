@@ -1,5 +1,110 @@
+<!DOCTYPE html>
 <html>
+<head>
+ <style>
+   body {
+     background-color : black;
+   }
+   H1{
+     color: white;
+   }
+   p {
+     color: white; 
+     }
+    #Animation{
+      color: white;
+      animation: myfirst 10s infinite;
+      font-size: 300%;
+    }
+  
 
-<h1> Test <h1>
+@keyframes myfirst {
+  0%   {color:white}
+  25%  {color:yellow}
+  50%  {color:purple}
+  75%  {color:blue}
+  100% {color: red}
+}
 
-<html>
+</style>
+<div id="background">
+  </head>
+  <body>
+    <p id="Box"></p>
+     <p id="Animation">Pronos-14</p>
+<!-- Bouton pour le timer -->
+  <input type= "button" value= "Timer/Stopwatch " name = "stopWatch" onclick= "button(1)"  > 
+
+  <input type= "button" onclick= "rating()" value= "Laisser une revue! "> 
+
+
+  <H1>
+    Quick'N'easy
+  </H1>
+  <br>
+  <p>
+    Nous somme une organisation a but lucratif qui non seulement veut aider a mangé des repas qui sont pour la santé et aussi apprendre sur la culture des autres pays qui soivent partout dans le monde. Le but de ce site est de promouvoir que le fais de cuisinier ne pas vraiment de talent mais de patience et observation.
+  </p>
+  <br>
+  <p>Les catégories que les recettes ont été classée:
+  </p>
+<br> 
+
+<!-- Bouton pour rediriger au recette culturel -->
+<input type= "button" value= "Culturel" name = "Culture" onclick= "button(2)"  > <p>France, finland, japan, chad etc...</p>
+
+<!--Bouton pour rediriger au recette facile et rapide -->
+<br>
+<br>
+<input type= "button" value= "Facile a faire " name = "Facile" onclick= "button(3)"  >  <p>Qui se fais en 50 minutes ou moins </p>
+
+<br>
+<br>
+
+<!-- Bouton pour les recettes de Diet -->
+ <input type= "button" value= "Diete " name = "Diet" onclick= "button(4)"  > <p>Pour les regimes </p>
+<br>
+<br>
+<script>
+
+
+ 
+ //Fonction pour deplacer l'utilisateur a chaque fois quelle est appeler 
+ function button (choix){
+
+
+if ( choix == 1){
+  location.replace ("stopWatch.html")
+
+  } 
+  else if (choix == 2) {
+    location.replace ("culturel.html")
+  }
+  else if (choix == 3) {
+    location.replace ("facile.html")
+  }
+  else if (choix == 4) {
+    location.replace ("diet.html")
+  }
+  
+
+
+}
+
+function rating (){
+
+   var choix = confirm("Est-ce que vous êtes satisfait avec votre notre site Quick'N'easy? ")
+
+   if (choix == true) {
+     alert("Merci pour votre revue!")
+   }
+    else if (choix == false){
+      alert ("On s'excuse de votre insatisfaction, laisser un mots a www.########.com pour des modification a notre service.")
+    }
+ }
+
+ </script>
+ <div></div>
+  </body>
+  </div>
+</html>
